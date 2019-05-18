@@ -29,7 +29,7 @@ def get_team_rate_rank(name):
 def main():
     print('Start to get teams')
     teams = team_extractor(True)
-    return
+
     # i = 0
     # t = {}
     # for key in teams:
