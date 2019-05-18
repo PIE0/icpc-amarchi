@@ -19,7 +19,7 @@ def get_user_rating(handle, local=False):
         try:
             file = open(path)
         except:
-            print("Can't find {}'s rating on local. Try to download it...".format(handle))
+            print("Downloading {}'s rating...".format(handle))
             url = handle_link + handle
             res = requests.get(url, allow_redirects=True)
             open(path, 'wb').write(res.content)
